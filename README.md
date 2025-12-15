@@ -1,1 +1,1 @@
-# Homebrew Tap for matzeuhels tools
+# Homebrew Tap for matzehuels tools
