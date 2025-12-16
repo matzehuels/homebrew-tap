@@ -11,7 +11,7 @@ class Stacktower < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/matzehuels/stacktower/releases/download/v0.1.0/stacktower_0.1.0_Darwin_x86_64.tar.gz"
-      sha256 "56ecb6b1b877c2e8f3e8239cf3458a8c2fab0754276949e6272e618e9684b72b"
+      sha256 "06994fd632674d3ff02565ebd782541d7ef972072e28284d8ca309098c618277"
 
       def install
         bin.install "stacktower"
@@ -19,7 +19,7 @@ class Stacktower < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/matzehuels/stacktower/releases/download/v0.1.0/stacktower_0.1.0_Darwin_arm64.tar.gz"
-      sha256 "23f13e971dbd01d95a972b9eea9202df1d87872eefc0706db1ba73876a16cf1c"
+      sha256 "95e283c6ae0d02d052f6e6f8461081005a79dae1aa0d621bb10c3ad3e8b12ec8"
 
       def install
         bin.install "stacktower"
@@ -30,14 +30,14 @@ class Stacktower < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/matzehuels/stacktower/releases/download/v0.1.0/stacktower_0.1.0_Linux_x86_64.tar.gz"
-      sha256 "eed91e399745483a5edfdf944ab00b87a42d8e35754fe4b8ee61173849e42567"
+      sha256 "2ea24fc7e0bf20e6331c7658ba02922d5f2295586a8fe5f92b5a901582ff105b"
       def install
         bin.install "stacktower"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/matzehuels/stacktower/releases/download/v0.1.0/stacktower_0.1.0_Linux_arm64.tar.gz"
-      sha256 "c76030867e4e7b2fa7d55da6658dd3fe52eade867fcc727f499c343e40d35121"
+      sha256 "cd9d5ebc11800744a47ef2cfc0b9e95f0d544fec813a40c5aef4ad509c0343d1"
       def install
         bin.install "stacktower"
       end
