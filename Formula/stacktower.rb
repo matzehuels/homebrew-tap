@@ -5,21 +5,21 @@
 class Stacktower < Formula
   desc "Visualize dependency graphs as elegant stacked tower diagrams"
   homepage "https://github.com/matzehuels/stacktower"
-  version "0.2.2"
+  version "1.0.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/matzehuels/stacktower/releases/download/v0.2.2/stacktower_0.2.2_Darwin_x86_64.tar.gz"
-      sha256 "f99b644401165413c217b51f2dfbb87ab3280a0877808f9b4a91656697ebaae8"
+      url "https://github.com/matzehuels/stacktower/releases/download/v1.0.0/stacktower_1.0.0_Darwin_x86_64.tar.gz"
+      sha256 "1a0ffcea2ac859cb44369f1c83c4d30fb85c655b861834e9013a4a705a33d8f3"
 
       def install
         bin.install "stacktower"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/matzehuels/stacktower/releases/download/v0.2.2/stacktower_0.2.2_Darwin_arm64.tar.gz"
-      sha256 "0db022653d75092facae5f14420e14e3d524a0c03b24619d273ca6d1cb7a6fc2"
+      url "https://github.com/matzehuels/stacktower/releases/download/v1.0.0/stacktower_1.0.0_Darwin_arm64.tar.gz"
+      sha256 "51c04234d4585ee418f4dad35bcdb644f6e951efc0a247b0432f2df3e964e961"
 
       def install
         bin.install "stacktower"
@@ -29,15 +29,15 @@ class Stacktower < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matzehuels/stacktower/releases/download/v0.2.2/stacktower_0.2.2_Linux_x86_64.tar.gz"
-      sha256 "15146284a5d33fa167dc5549fbb69861e478919e8a5abd4194a70c634107fa52"
+      url "https://github.com/matzehuels/stacktower/releases/download/v1.0.0/stacktower_1.0.0_Linux_x86_64.tar.gz"
+      sha256 "9fd071e4ba29e51f5a30e80463a6ae524e40646393ab4444217839b008341f44"
       def install
         bin.install "stacktower"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/matzehuels/stacktower/releases/download/v0.2.2/stacktower_0.2.2_Linux_arm64.tar.gz"
-      sha256 "a5c4f7be59cd4ad341a3b89e86bdc19e60a6466317d81a8f5deaa291fb1aee3e"
+      url "https://github.com/matzehuels/stacktower/releases/download/v1.0.0/stacktower_1.0.0_Linux_arm64.tar.gz"
+      sha256 "644d7d9fcc177915af21af6c46380130d81fe69ca79d60032ed4b1ed6bfd2021"
       def install
         bin.install "stacktower"
       end
